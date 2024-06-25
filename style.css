@@ -66,4 +66,13 @@ body {
     .heading {
         font-size: 80px;
     }
+
+    /* Contact section */
+    .logo-icon {
+        font-size: 80px;
+    }
+
+    .info-text {
+        font-size: 20px;
+    }
 }
