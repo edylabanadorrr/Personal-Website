@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation Bar */
+/* Navigation ar */
 .navbar-nav .nav-link:hover {
     color: #DBC6C0 !important; /* Set the text color to white on hover */
 }
@@ -16,10 +16,9 @@ body {
 /* Style for the name in the home section */
 
 .heading {
-    font-size: 100px;
-    font-weight: bolder;
-    margin: 0px;
-    background-color: lavender;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 120px;
     background-image: linear-gradient(to top, #4D6489 0%,  #1C3150 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -44,6 +43,11 @@ body {
 
 /* About section */
 
+.web-title,
+.app-title {
+    font-size: 50px;
+}
+
 .banner {
     transition: transform 0.3s ease;
 }
@@ -55,15 +59,83 @@ body {
 
 
 /* For small devices */
-@media (max-width: 576px) {
-    .heading {
-        font-size: 50px;
+
+@media (max-width: 320px) {
+
+    .container-fluid {
+        padding: 20px !important;
     }
+    .container-fluid .container .heading {
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+
+    .min-vh-100 {
+        min-height: 50vh !important;
+    }
+
+    .background-image {
+        max-height: 70%;
+    }
+
+    /*About section */
+    .card-about {
+        width: 200px;
+    }
+    .card-body .web-title {
+        font-size: 15px;
+    }
+
+    .card-body .app-title {
+        font-size: 15px;
+    }
+
+    /* Contact section */
+    .logo-icon {
+        font-size: 10px;
+    }
+
+    .container-contact-section .info-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .container-fluid {
+        padding: 30px !important;
+    }
+
+    .container-fluid .container .heading {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .min-vh-100 {
+        min-height: 50vh !important;
+    }
+
+    .background-image {
+        max-height: 80%;
+    }
+
+    /*About section */
+    .card-about {
+        width: 300px;
+    }
+    .card-body .web-title {
+        font-size: 25px;
+    }
+
+    .card-body .app-title {
+        font-size: 25px;
+    }
+
 }
 
 /* For medium devices */
 @media (max-width: 768px) {
-    .heading {
+    .container .heading {
         font-size: 80px;
     }
 
