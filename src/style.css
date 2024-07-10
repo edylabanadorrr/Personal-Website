@@ -116,6 +116,15 @@ body {
         max-height: 80%;
     }
 
+    /*About section */  
+    .card-body .web-title {
+        font-size: 20px;
+    }
+    
+    .card-body .app-title {
+        font-size: 20px;
+    }
+
 }
 
 /* For medium devices */
